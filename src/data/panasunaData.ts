@@ -2012,7 +2012,7 @@ export interface Director {
   role: Localized;
   bio: Localized<readonly string[]>;
   badges: readonly DirectorBadge[];
-  /** Real portrait in /public/photos (Gemini watermark cropped out). */
+  /** Real studio portrait in /public/photos (960×1200 JPG, 4:5 — matches the DirectorPortrait frame). */
   photo: string;
   avatar: { monogram: string; motif: AvatarMotif; tone: "gold" | "emerald" };
 }
